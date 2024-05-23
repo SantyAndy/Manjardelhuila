@@ -1,0 +1,192 @@
+*{
+	box-sizing: border-box
+}
+html{scroll-behavior: smooth
+}
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+body{
+	font-family: 'Times New Roman', 'serif'sans-serif;
+	margin: 0;
+}
+button{
+	font-size: 1em;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 15px;
+	border: 1px solid #000000;
+	box-shadow: 2px 2px 8px red;
+	color: white;
+	background-color: red;
+}
+button:hover{
+	background-color:#7A2627;
+
+}
+#hero{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+  flex-direction: column;
+		heigth: 90vh;
+	color: #FBFBFB;
+	background-image:url("fondo 3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 400px;
+}
+#productos{
+background-color: #343434;  
+color: white;
+	text-align: center;
+	
+}
+#productos .container{
+	padding: 50px 30px;
+	
+}
+#producto h2{
+	margin-top: 0;
+}
+#productos p{
+	display: none;
+}
+#productos .carta{
+background-position: center center;
+	background-size: cover;
+	padding: 50px;
+	margin: 10px;
+	border-radius: 15px;
+}
+.carta:first-child{	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("Afiche 5.jpg");
+}
+.carta:nth-child(2){ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+url("Afiche 4.jpg");
+}
+.carta:nth-child(3){
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("Afiche 6.jpg");
+}
+.carta:nth-child(4){
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("Afiche 7.jpg");
+}
+#productos .carta{
+	width: 600px;
+	height: 400px;
+	transition: 0.8s;
+}
+#productos .carta:hover{
+	width: 350px;
+	height: 350px;
+}
+#caracteristicas .container{
+	text-align: center;
+	padding: 100px 12px;
+}
+#caracteristicas l1{
+	margin: 16px 0px;
+	font-weight: bold;
+}
+#final{
+	display: flex;
+	align-items: center;
+	flex-direction: center;
+	justify-content: center;
+	text-align: center;
+	background-color: #343434;
+	color: white;
+	height: 80vh;
+}
+#final{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+  flex-direction: column;
+}
+#final h2{
+	font-size: 9vw;
+}
+#final button{
+	font-size: 4vw;
+}
+footer{
+	background-color: #EAEAEA
+}
+footer p{
+	margin: 0;
+	color: #AD70C5;
+	padding: 12px
+}
+footer .container{
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+@media (min-width: 720px){
+	#Servicios .container{
+		display: flex;
+		justify-content: center;
+	}
+	#Servicios .texto{
+		width: 50%;
+		text-align: inherit;
+		padding: 0px 30px;
+		margin: 45px;
+	}
+	#Servicios .imgcontainer{
+		background-image:url("Un poco de nosotros.jpg");
+		background-size: cover;
+		background-position: center center;
+		height: 390px;
+		width: 450px;
+		border-radius: 15px;
+		margin: 45px;
+	}
+	#productos .estilo{
+		display: flex;
+		justify-content: center;
+	}
+	#productos .p{
+		display: block;
+		margin-bottom: 30px;
+	}
+	#productos .h3{
+		margin-top: 0px;
+	}
+	#productos .carta{
+		padding: 70px;
+	}
+	#caracteristicas{
+		background-image: url("logo 1.png");
+		background-repeat: no-repeat;
+		background-size: 500px 400px;
+		background-position-x: calc(100vw - 100px) 120px;
+		margen: 15px;
+		background-position: center;
+	}
+	#caracteristicas .container{
+		text-align: inherit;
+	}
+	#caracteristicas li{
+		margin-left: 200px;
+	}
+	#final h2{
+		font-size: 5em;
+	}
+	#final button{
+		font-size:2em;
+	}
+}
+@media (min-width: 1200px){
+	#caracteristicas{
+		background-position-x: calc(100vw - 800px);
+	}
+}
